@@ -2,7 +2,7 @@ import { Typography } from "@mui/material";
 import  './style.css';
 
 const Footer = () => {
-    return <div style={{ marginBottom:'100px', height:'100px'}}>
+    return <div id="footer">
         <Typography fontWeight={600} my={2}>Turn of the Light</Typography>
         <Typography 
             className="highlight"
