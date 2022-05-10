@@ -21,7 +21,7 @@ const ImageBox: React.FC<ImageBoxProps> = ({ imageUrl, title, description }) => 
 }
 
 const GalleryPage:React.FC = () => {
-    return <div style={{ marginBottom: '250px' }}>
+    return <div>
         <CoverSection />
         <Container maxWidth="lg">
             <Grid container spacing={10} direction="row" justifyContent="center">

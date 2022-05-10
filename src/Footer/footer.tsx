@@ -3,7 +3,9 @@ import  './style.css';
 
 const Footer = () => {
     return <div id="footer">
-        <Typography fontWeight={600} my={2}>Turn of the Light</Typography>
+        <Typography fontWeight={600} my={2}>
+            <img src="https://media1.giphy.com/media/0xR7MUO0hJfWtco7C6/giphy.gif" width={50} height={50}/>
+        </Typography>
         <Typography 
             className="highlight"
             noWrap
