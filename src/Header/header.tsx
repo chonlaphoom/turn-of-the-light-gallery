@@ -1,9 +1,31 @@
-import { AppBar, Toolbar, Typography } from "@mui/material";
+import { Typography } from "@mui/material";
+import { Link } from "react-router-dom";
 
-const Header = () => {
-    return <div style={{backgroundColor:'white', display:'flex', justifyContent:'end'}}>
-            <Typography sx={{cursor:'pointer'}} noWrap color={'black'} variant="h6" component="div" marginY={2} marginX={2}>About</Typography>
-            <Typography sx={{cursor:'pointer'}} noWrap color={'black'} variant="h6" component="div" marginY={2} marginX={2}>Room</Typography>
+const Header:React.FC = () => {
+
+    return <div style={{ backgroundColor: 'white', display: 'flex', justifyContent: 'end', marginTop:'1rem' }}>
+        <Link style={{textDecoration: 'none'}} to={'/gallery'}>
+            <Typography 
+                sx={{ cursor: 'pointer' }} 
+                noWrap color={'black'} 
+                variant="h6" 
+                component="div" 
+                marginY={2} 
+                marginX={2}>
+                    Gallery
+            </Typography>
+        </Link>
+        <Link style={{textDecoration: 'none'}}  to={'/about'}>
+            <Typography
+                sx={{ cursor: 'pointer' }} 
+                noWrap color={'black'} 
+                variant="h6" 
+                component="div" 
+                marginY={2} 
+                marginX={2}>
+                    About
+            </Typography>
+        </Link>
     </div>
 }
 
