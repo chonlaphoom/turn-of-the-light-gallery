@@ -1,9 +1,10 @@
-import { Typography } from "@mui/material";
+import { Box, Container, Typography } from "@mui/material";
 import { Link } from "react-router-dom";
 
 const Header:React.FC = () => {
 
-    return <div style={{ backgroundColor: 'white', display: 'flex', justifyContent: 'end', margin:'1rem 0 1rem 0' }}>
+    return <Container maxWidth="xl">
+    <Box sx={{backgroundColor: 'white', display: 'flex', justifyContent: 'end', margin:'1rem 0 1rem 0'}}>
         <Link style={{textDecoration: 'none'}} to={'/gallery'}>
             <Typography 
                 sx={{ cursor: 'pointer' }} 
@@ -28,7 +29,8 @@ const Header:React.FC = () => {
                     About
             </Typography>
         </Link>
-    </div>
+        </Box>
+    </Container>
 }
 
 export default Header;

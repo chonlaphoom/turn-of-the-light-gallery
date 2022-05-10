@@ -17,22 +17,20 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       <div className="App">
-        <Container maxWidth="xl">
           <Header />
-          <Routes>
-            <Route path='/' element={<GalleryPage />} />
-            <Route path="gallery" element={<GalleryPage />} />
-            <Route path="about" element={<AboutPage />} />
-            <Route
-              path="*"
-              element={
-                <div style={{ padding: "2rem" }}>
-                  <h2>Error Page Not Found</h2>
-                </div>
-              } />
-          </Routes>
+            <Routes>
+              <Route path='/' element={<GalleryPage />} />
+              <Route path="gallery" element={<GalleryPage />} />
+              <Route path="about" element={<AboutPage />} />
+              <Route
+                path="*"
+                element={
+                  <div style={{ padding: "2rem" }}>
+                    <h2>Error Page Not Found</h2>
+                  </div>
+                } />
+            </Routes>
           <Footer/>
-        </Container>
       </div>
     </ThemeProvider>
   );

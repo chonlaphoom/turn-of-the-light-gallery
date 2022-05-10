@@ -20,13 +20,15 @@ const ImageBox: React.FC<ImageBoxProps> = ({ imageUrl, title, description }) => 
     </Grid>
 }
 
-const GalleryPage = () => <div style={{ marginBottom: '250px' }}>
-    <CoverSection />
-    <Container maxWidth="lg">
-        <Grid container spacing={10} direction="row" justifyContent="center">
-            {IMAGES.map((image, index) => <ImageBox {...image} />)}
-        </Grid>
-    </Container>
-</div>
+const GalleryPage:React.FC = () => {
+    return <div style={{ marginBottom: '250px' }}>
+        <CoverSection />
+        <Container maxWidth="lg">
+            <Grid container spacing={10} direction="row" justifyContent="center">
+                {IMAGES.map((image, index) => <ImageBox {...image} />)}
+            </Grid>
+        </Container>
+    </div>
+}
 
 export default GalleryPage;
