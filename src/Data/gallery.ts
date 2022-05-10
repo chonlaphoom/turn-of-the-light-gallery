@@ -2,15 +2,6 @@ import { ImageBoxProps } from "../Interfaces/Image";
 
 export const IMAGES: ImageBoxProps[] = [
     {
-        imageUrl: "/gallery/IMG_0286.JPG",
-        title: '001',
-        description: `Lorem ipsum dolor sit amet,
-         consectetur adipiscing elit. Nam facilisis sit amet felis at interdum. 
-         Aliquam ut scelerisque augue. Phasellus feugiat nisl diam, eu tempus diam dictum ut. 
-         Quisque volutpat felis erat, vitae tincidunt sapien commodo quis. Curabitur commodo pretium semper. 
-         Etiam ut finibus lorem`
-    },
-    {
         imageUrl: "/gallery/IMG_0287.JPG",
         title: '002',
         description: `Lorem ipsum dolor sit amet,

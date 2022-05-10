@@ -1,6 +1,7 @@
 import { Container, createTheme, ThemeProvider } from '@mui/material';
 import { Route, Routes } from 'react-router-dom';
 import './App.css';
+import Footer from './Footer/footer';
 import Header from './Header/header';
 import AboutPage from './Pages/About';
 import GalleryPage from './Pages/Gallery';
@@ -30,6 +31,7 @@ function App() {
                 </div>
               } />
           </Routes>
+          <Footer/>
         </Container>
       </div>
     </ThemeProvider>

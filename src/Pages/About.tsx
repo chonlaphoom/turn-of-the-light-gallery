@@ -1,6 +1,6 @@
 
 const AboutPage = () => {
-    return <>About Page</>
+    return <></>
 }
 
 export default AboutPage;
