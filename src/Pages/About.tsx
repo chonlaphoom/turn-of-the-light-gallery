@@ -1,5 +1,6 @@
 import { Box, Container, Grid, Typography } from "@mui/material";
 
+
 const AboutDrawer = () => {
     return <Grid container spacing={3}>
     <Grid item sm={6} textAlign="left">
