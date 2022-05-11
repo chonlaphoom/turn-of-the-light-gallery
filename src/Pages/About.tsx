@@ -1,43 +1,49 @@
-import { Box, Container, Typography } from "@mui/material";
+import { Box, Container, Grid, Typography } from "@mui/material";
 
 const AboutDrawer = () => {
-    return <Box sx={{ display: 'flex', justifyContent: 'center', margin: '20px 0 20px 0' }}>
+    return <Grid container spacing={3}>
+    <Grid item sm={6} textAlign="left">
         <div>
             <img src="https://media.giphy.com/media/o4OxHgVp2dDL3LyFsC/giphy.gif" height={500} />
         </div>
-        <div style={{ alignSelf: 'center', margin: '0 0 0 50px', overflow: "hidden", textOverflow: "ellipsis", width: "400px", textAlign: 'start', color: 'black' }}>
-            <Typography my={2} variant="h4">About The Concepts</Typography>
-            <span>
-                Lorem ipsum dolor sit amet,
-                consectetur adipiscing elit. Nam facilisis sit amet felis at interdum.
-                Aliquam ut scelerisque augue. Phasellus feugiat nisl diam, eu tempus diam dictum ut.
-                Quisque volutpat felis erat, vitae tincidunt sapien commodo quis. Curabitur commodo pretium semper.
-                Etiam ut finibus lorem
-            </span>
-        </div>
-    </Box>;
+    </Grid>
+    <Grid item sm={6}>
+        <Typography align="left" my={2} variant="h4">
+            About The Concepts
+        </Typography>
+        <Typography paragraph align="left">
+            Lorem ipsum dolor sit amet,
+            consectetur adipiscing elit. Nam facilisis sit amet felis at interdum.
+            Aliquam ut scelerisque augue. Phasellus feugiat nisl diam, eu tempus diam dictum ut.
+            Quisque volutpat felis erat, vitae tincidunt sapien commodo quis. Curabitur commodo pretium semper.
+            Etiam ut finibus lorem
+        </Typography>
+    </Grid>
+    </Grid>;
 }
 
 const AboutConcept = () => {
-    return <Box sx={{ display: 'flex', justifyContent: 'center', margin: '20px 0 20px 0' }}>
-        <div style={{ alignSelf: 'center', margin: '0 50px 0 0', overflow: "hidden", textOverflow: "ellipsis", width: "400px", textAlign: 'start', color: 'black' }}>
-            <Typography my={2} variant="h4">About The Artist</Typography>
-            <span>
-                Lorem ipsum dolor sit amet,
-                consectetur adipiscing elit. Nam facilisis sit amet felis at interdum.
-                Aliquam ut scelerisque augue. Phasellus feugiat nisl diam, eu tempus diam dictum ut.
-                Quisque volutpat felis erat, vitae tincidunt sapien commodo quis. Curabitur commodo pretium semper.
-                Etiam ut finibus lorem
-            </span>
-        </div>
-        <div>
-            <img src="https://media.giphy.com/media/2xu5zpSV3oqKcCSZ49/giphy.gif" height={500} />
-        </div>
-    </Box>;
+    return <Grid container spacing={3}>
+    <Grid item sm={6} alignSelf={'center'}>
+        <Typography align="left" my={2} variant="h4">
+            About The Artist
+        </Typography>
+        <Typography paragraph align="left">
+            Lorem ipsum dolor sit amet,
+            consectetur adipiscing elit. Nam facilisis sit amet felis at interdum.
+            Aliquam ut scelerisque augue. Phasellus feugiat nisl diam, eu tempus diam dictum ut.
+            Quisque volutpat felis erat, vitae tincidunt sapien commodo quis. Curabitur commodo pretium semper.
+            Etiam ut finibus lorem
+        </Typography>
+    </Grid>
+    <Grid item sm={6} textAlign="right">
+        <img src="https://media.giphy.com/media/2xu5zpSV3oqKcCSZ49/giphy.gif" height={500} />
+    </Grid>
+    </Grid>;
 }
 
 const AboutPage = () => {
-    return <Container maxWidth='lg'>
+    return <Container maxWidth='md'>
         <AboutDrawer />
         <AboutConcept />
     </Container>
